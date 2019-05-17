@@ -8,7 +8,7 @@ dep_file = .$@.d
 all: $(OBJS)
 	$(CC) $(LDFLAGS) -g -o $(OUT_BIN) $^
 	
-%.o: %.c:
+%.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $^
 	
 clean:
